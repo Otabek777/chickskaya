@@ -39,11 +39,15 @@
                         <li class="li">
                             <a href="#" class="item">Контакты</a>
                         </li>
+                        <a href="tel:+7 (383) 230‒02‒88" class="phone">+7 (383) 230‒02‒88</a>
                     </ul>
                 </div>
                 <div class="header__phone">
                     <a href="tel:+7 (383) 230‒02‒88" class="phone">+7 (383) 230‒02‒88</a>
                 </div>
+                <button class="header__burgir">
+                    <span></span><span></span><span></span>
+                </button>
             </div>
         </div>
     </header>
@@ -61,6 +65,14 @@
                 </div>
                 <div class="category__box">
                     <div class="category__left">
+                        <div class="img">
+                            <img src="img/p1.png" alt="">
+                        </div>
+                        <div class="img">
+                            <img src="img/p13.png" alt="">
+                        </div>
+                    </div>
+                    <div class="category__left_slider">
                         <div class="img">
                             <img src="img/p1.png" alt="">
                         </div>
@@ -91,21 +103,19 @@
                 <a href="#" class="footer__logo">
                     <img src="img/logo.svg" alt="">
                 </a>
-                <div class="footer__right">
-                    <div class="footer__map">
-                        <p>632660, Россия, Новосибирская область, <br> Коченёвский р-н, с. Прокудское</p>
-                    </div>
-                    <div class="footer__email">
-                        <a href="tomail:secr.chick@gmail.com" class="link">secr.chick@gmail.com</a>
-                    </div>
-                    <div class="footer__phone">
-                        <a href="tel:+7 (383) 230‒02‒88" class="phone">+7 (383) 230‒02‒88</a>
-                        <a href="#" class="link">Все контакты</a>
-                        <div class="soc">
-                            <a href="#" class="item">
-                                <img src="img/vk.svg" alt="">
-                            </a>
-                        </div>
+                <div class="footer__map">
+                    <p>632660, Россия, Новосибирская область, <br> Коченёвский р-н, с. Прокудское</p>
+                </div>
+                <div class="footer__email">
+                    <a href="tomail:secr.chick@gmail.com" class="link">secr.chick@gmail.com</a>
+                </div>
+                <div class="footer__phone">
+                    <a href="tel:+7 (383) 230‒02‒88" class="phone">+7 (383) 230‒02‒88</a>
+                    <a href="#" class="link">Все контакты</a>
+                    <div class="soc">
+                        <a href="#" class="item">
+                            <img src="img/vk.svg" alt="">
+                        </a>
                     </div>
                 </div>
             </div>
@@ -129,21 +139,12 @@
     <script src="slick-1.8.1/slick/slick.min.js"></script>
     <script src="js/main.js"></script>
     <script>
-        $('.awards__slider').slick({
+        $('.category__left_slider').slick({
             infinite: true,
-            slidesToShow: 3,
+            slidesToShow: 1,
             slidesToScroll: 1,
             dots: true,
-            arrows: true,
-            centerMode: true,
-            centerPadding: '0px',
-        });
-        $('.story__slider').slick({
-            infinite: true,
-            slidesToShow: 3.14,
-            slidesToScroll: 1,
-            dots: true,
-            arrows: true,
+            arrows: false,
         });
     </script>
 </body>
