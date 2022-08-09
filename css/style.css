@@ -1290,6 +1290,11 @@ section {
 .paginator .left:hover svg path, .paginator .link:hover svg path, .paginator .right:hover svg path {
   fill: #fff;
 }
+.paginator .link.active {
+  background: #D81920;
+  color: #fff;
+  border-color: #D81920;
+}
 
 .category {
   padding-top: 24px;
@@ -1637,7 +1642,8 @@ section {
   padding: 48px 24px 25px 24px;
   background: #FFFFFF;
   border-radius: 16px;
-  position: relative;
+  position: sticky;
+  top: 100px;
 }
 .jobs__right .wrap .img_wrap {
   width: 80px;
@@ -1855,6 +1861,14 @@ section {
           transform: translate(-50%, -50%);
   width: 100%;
   height: auto;
+}
+.contacts__bottom .right div {
+  height: 100%;
+}
+.contacts__bottom .right iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
 }
 
 .contacts__box {
@@ -2282,6 +2296,14 @@ section {
           transform: translate(-50%, -50%);
   width: 100%;
   height: auto;
+}
+.where_buy__map2 .right div {
+  height: 100%;
+}
+.where_buy__map2 .right iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
 }
 
 @media screen and (max-width: 1300px) {
