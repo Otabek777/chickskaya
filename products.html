@@ -51,6 +51,36 @@
             </div>
         </div>
     </header>
+    <div class="modal">
+        <div class="modal__block">
+            <span class="modal__close">
+                <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 19 19" fill="none">
+                    <path d="M14.0967 4.90381L4.90429 14.0962" stroke="black" stroke-width="2" stroke-linecap="round"/>
+                    <path d="M4.90332 4.90381L14.0957 14.0962" stroke="black" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+            </span>
+            <p class="title">Оставьте заявку </p>
+            <p class="modal__text">Наш специалист свяжется с Вами в ближайшее время и ответит  на все вопросы</p>
+            <div class="modal__form">
+                <div class="box">
+                    <div class="input">
+                        <input type="text" placeholder="Имя">
+                    </div>
+                    <div class="input">
+                        <input type="text" placeholder="+7(___) ___-__-__">
+                    </div>
+                </div>
+                <textarea class="textarea" placeholder="Комментарий"></textarea>
+                <div class="box">
+                    <div class="check">
+                        <input type="checkbox" id="1">
+                        <label for="1">Соглашаюсь на обработку <br> <a href="#">персональных данных</a></label>
+                    </div>
+                    <button class="btn">Отправить</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <main class="main">
         <section class="products">
             <div class="container">
@@ -71,7 +101,7 @@
                                 <a href="#" class="item">Мясо кур и субпродукты</a>
                             </div>
                         </div>
-                        <a href="#" class="btn">Узнать цену</a>
+                        <a href="#" class="btn open-modal">Узнать цену</a>
                     </div>
                     <div class="products__content">
                         <div class="box">

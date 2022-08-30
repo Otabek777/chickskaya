@@ -7,6 +7,14 @@ $(".header__burgir").click(function() {
     $(this).toggleClass("active");
     $(".header__navbar").toggleClass("active");
 });
+if(document.querySelector(".open-modal")) {
+    $(".open-modal").click(function() {
+        $(".modal").addClass("open");
+    });
+    $(".modal__close").click(function() {
+        $(".modal").removeClass("open");
+    });
+};
 
 if(document.querySelector('.input_phone')) {
     window.addEventListener("DOMContentLoaded", function() {
