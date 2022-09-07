@@ -15,6 +15,12 @@ if(document.querySelector(".open-modal")) {
         $(".modal").removeClass("open");
     });
 };
+if(document.querySelector(".where_buy_clear")) {
+    $(".where_buy_clear").click(function() {
+        $(".map_search .item").removeClass("active");
+        $(".where_buy__left svg path").removeClass("active");
+    });
+}
 
 if(document.querySelector('.input_phone')) {
     window.addEventListener("DOMContentLoaded", function() {
