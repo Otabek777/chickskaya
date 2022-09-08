@@ -17,9 +17,16 @@ if(document.querySelector(".open-modal")) {
 };
 if(document.querySelector(".where_buy_clear")) {
     $(".where_buy_clear").click(function() {
+        $(this).addClass("none");
         $(".map_search .item").removeClass("active");
         $(".where_buy__left svg path").removeClass("active");
-        $(this).addClass("none");
+        $(".inside_wrap").removeClass("active");
+        $(".main_wrap").addClass("active");
+    });
+    $(".main_wrap .item").click(function() {
+        $(".where_buy_clear").removeClass("none");
+        $(".inside_wrap").addClass("active");
+        $(".main_wrap").removeClass("active");
     });
 }
 
