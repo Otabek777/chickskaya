@@ -22,13 +22,32 @@ if(document.querySelector(".where_buy_clear")) {
         $(".where_buy__left svg path").removeClass("active");
         $(".inside_wrap").removeClass("active");
         $(".main_wrap").addClass("active");
+
+        if(document.querySelector(".map_search")) {
+            function mapSearch (nameItem) {
+                $("#" + nameItem).click(function() {
+                    $(".where_buy__left svg path").removeClass("active");
+                    $(".where_buy__left ." + nameItem).addClass("active");
+                });
+            };
+            mapSearch("novosibirskaya");
+            mapSearch("kemerovskaya");
+            mapSearch("altai");
+            mapSearch("tiva");
+            mapSearch("buryatiya");
+            mapSearch("irkutskaya");
+            mapSearch("krasnoyarskiy");
+            mapSearch("omskaya");
+            mapSearch("tumenskaya");
+        };
+        
     });
     $(".main_wrap .item").click(function() {
         $(".where_buy_clear").removeClass("none");
         $(".inside_wrap").addClass("active");
         $(".main_wrap").removeClass("active");
     });
-}
+};
 
 if(document.querySelector('.input_phone')) {
     window.addEventListener("DOMContentLoaded", function() {
@@ -67,4 +86,4 @@ if(document.querySelector('.input_phone')) {
       });
     
     });
-}
+};
