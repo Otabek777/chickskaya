@@ -3325,7 +3325,7 @@ section {
   .where_buy__left {
     width: 100%;
     margin: 0;
-    margin-bottom: 40px;
+    margin-bottom: 60px;
   }
   .where_buy__left svg {
     width: 100%;
@@ -3347,6 +3347,10 @@ section {
 
   .map_search .main_wrap, .map_search .inside_wrap {
     height: 264px;
+  }
+
+  .where_buy_clear {
+    top: -50px;
   }
 
   .where_buy__map {
