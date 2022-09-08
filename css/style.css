@@ -3345,7 +3345,7 @@ section {
     height: 75px;
   }
 
-  .map_search .wrap {
+  .map_search .main_wrap, .map_search .inside_wrap {
     height: 264px;
   }
 
