@@ -19,6 +19,7 @@ if(document.querySelector(".where_buy_clear")) {
     $(".where_buy_clear").click(function() {
         $(".map_search .item").removeClass("active");
         $(".where_buy__left svg path").removeClass("active");
+        $(this).addClass("none");
     });
 }
 
